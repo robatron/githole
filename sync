@@ -1,0 +1,14 @@
+#! /bin/bash
+
+# Pull changes from repo, add new local files, commit any changes, and push
+
+notify-send "githole" "Syncing $(pwd)...\nRepo size: $(du -hs | cut -f 1)"
+echo "Pulling changes..."
+git pull
+echo "Adding any new files..."
+git add *
+echo "Committing any changes..."
+git commit -am "Cha-cha-changes!"
+echo "Pushing changes..."
+git push origin master
+
