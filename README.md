@@ -5,8 +5,8 @@ A little project that attempts to be a less-restrictive and lighter-weight versi
 ## Plans
 
 I plan on having two components:
-* **Server:** Consists of a bare Git repository, and maybe eventually a web interface for viewing files.
-* **Client:** Basically a clone of the server's Git repository with some an auto push/pull and notificaion system.
+ * **Server:** Consists of a bare Git repository, and maybe eventually a web interface for viewing files.
+ * **Client:** Basically a clone of the server's Git repository with some an auto push/pull and notificaion system.
 
 
 ## Requirements
