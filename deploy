@@ -5,12 +5,6 @@
 # Drop the githole scripts (including this one) into a folder named '.githole'
 # inside your githole repository, and run this deploy script.
 
-# Fetch notify-send so we can alert the user of gitdrop actions
-# Ubuntu uses Notify OSD. Here are the development guidelines:
-# https://wiki.ubuntu.com/NotificationDevelopmentGuidelines
-echo "Installing libnotify-bin..."
-sudo aptitude install libnotify-bin
-
 # Put the sync command in an hourly cron
 echo "Putting sync commands in an hourly cron job..."
 sudo ln -s $(pwd)/sync /etc/cron.hourly

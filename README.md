@@ -26,7 +26,13 @@ Clients are just a clone of the server githole repo with a few helper scripts. C
 
 ## Requirements
 
-I'm writing this for myself at the moment, so I'm only trying to get it to work on my machines which run Ubuntu Linux, but it shouldn't be too hard to get it working for your purposes too.
+Here are the dependancies:
+
+* Git >= 1.7.4
+* notify-send >= 0.2.2
+
+If you're on Ubuntu, you can install both with:
+
+    sudo aptitude install git libnotify-bin
 
 Feel free to contact me with any questions.
-
