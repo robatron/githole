@@ -12,6 +12,11 @@
 #
 # (See README for more details)
 
+echo "Deploying client githole..."
+
 # Put the sync command in an hourly cron
 echo "Putting sync commands in an hourly cron job..."
 sudo ln -s $(pwd)/sync /etc/cron.hourly
+
+echo "Done!"
+
