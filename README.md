@@ -1,19 +1,21 @@
 # githole
 
-A quick-and-dirty folder auto-synchronization system using Git and cron.
+A quick-and-dirty folder auto-synchronization system using [Git](http://en.wikipedia.org/wiki/Git_(software)) and [cron](http://en.wikipedia.org/wiki/Cron).
 
 ## About
 
 I wrote this to be a rough, bare-bones alternative to [Dropbox](http://www.dropbox.com/) for my own purposes. Githole and Dropbox differ in the following ways:
 
-### Advantages
+### Differences between githole and Dropbox
+
+#### Advantages
 
  * It's light-weight (it only uses Git and cron)
  * It's fairly simple to set up
  * You control the master githole repository, so it can be as large and secure as you want
  * The githole folder is a pure Git repo, so you can use your favorite Git utilities to view and manipulate it
 
-### Disadvantages
+#### Disadvantages
 
  * Githole has no pretty web-interface
  * Githole has no built-in file-sharing system
