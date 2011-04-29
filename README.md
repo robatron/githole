@@ -4,9 +4,11 @@ A quick-and-dirty folder auto-synchronization system using [Git](http://en.wikip
 
 ## About
 
-I wrote this to be a rough, bare-bones alternative to [Dropbox](http://www.dropbox.com/) for my own purposes. The idea is you have one master githole repository on a server, and many client computers that have a clone of this repository. The githole scripts reside on every client and facilitate automatic synchronization. This results in a single folder that remains synchronized across all client machines.
+I wrote this to be a rough, bare-bones alternative to [Dropbox](http://www.dropbox.com/) for my own purposes. Githole allows you to have a single folder that will remain automatically synchronized across multiple machines.
 
-Githole and Dropbox differ in the following ways:
+The idea is you have one master githole repository on a server, and many client machines that have a clone of this repository. Automatic synchronization is facilitated by the the githole scripts that reside on each of the client machines. This results in a single folder that remains synchronized across all client machines.
+
+Here are some reasons why you should (and shouldn't) use githole over Dropbox:
 
 #### Advantages
 
