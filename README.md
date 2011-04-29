@@ -42,25 +42,25 @@ Githole clients are just a clone of the master githole repository with a few hel
 
 1. Install the notify-send so githole can send messages to your desktop notification system:
 
-    sudo apt-get install libnotify-bin
+``sudo apt-get install libnotify-bin``
 
-1. Clone your master githole repository
+1. Clone your master githole repository:
 
-    git clone ssh://yourusername@server.address/path/to/yourgithole.git # See git help clone for valid Git URLs
+``git clone ssh://yourusername@server.address/path/to/yourgithole.git # See git help clone for valid Git URLs``
 
-1. Make a .githole folder inside your githole    
+1. Make a .githole folder inside your githole:
 
-    cd yourgithole
-    mkdir .githole
+``cd yourgithole``
+``mkdir .githole``
 
-1. Fetch the githole scripts into your .githole directory
+1. Fetch the githole scripts into your .githole directory:
 
-    cd .githole
-    git clone https://github.com/robatron/githole.git
+``.githole``
+``git clone https://github.com/robatron/githole.git``
 
 1. Run the deploy script
 
-    ./deploy
+``./deploy``
 
 ## Usage
 
