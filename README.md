@@ -1,6 +1,6 @@
 # githole
 
-A quick-and-dirty folder auto-synchronization system using [Git]('http://en.wikipedia.org/wiki/Git_(software)') and [cron](http://en.wikipedia.org/wiki/Cron).
+A quick-and-dirty folder auto-synchronization system using [Git](http://en.wikipedia.org/wiki/Git_(software\)) and [cron](http://en.wikipedia.org/wiki/Cron).
 
 ## About
 
