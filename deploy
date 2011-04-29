@@ -1,18 +1,17 @@
 #! /bin/bash
 
-# Deploys a githole repository here
+# Deploys a client githole repository
 
-# Drop the githole scripts (including this one) into a folder named '.githole'
-# inside your githole repository, and run this deploy script.
+# Client deploy instructions
+# --------------------------
+#
+# 1. Clone your master githole repo onto your client machine
+# 2. Drop these githole scripts (including this one) into a folder named 
+#    '.githole' inside your client githole repository you just cloned, and run 
+#    this deploy script.
+#
+# (See README for more details)
 
 # Put the sync command in an hourly cron
 echo "Putting sync commands in an hourly cron job..."
 sudo ln -s $(pwd)/sync /etc/cron.hourly
-
-# Symlink the sync command in the bin directory so we can force syncs
-echo "Symlinking sync to /usr/bin/..."
-sudo ln -s $(pwd)/sync /usr/bin/githolesync
-
-# Put this .githole directory in the .gitignore so it doesn't get added
-echo ".githole" >> ../.gitignore
-
