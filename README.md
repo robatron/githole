@@ -41,7 +41,6 @@ The master repository is just a bare Git repository. Find server with a persista
 Githole clients are just a clone of the master githole repository with a few helper scripts. 
 
 1. Install notify-send
-
 notify-send is a utility that allows githole to communicate with your desktop environment's notification system to tell you about githole synchronization status. If you're on Ubuntu, you should be able to install it with the following:
 
     sudo apt-get install libnotify-bin
