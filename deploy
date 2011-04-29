@@ -19,3 +19,6 @@ sudo ln -s $(pwd)/sync /etc/cron.hourly
 echo "Symlinking sync to /usr/bin/..."
 sudo ln -s $(pwd)/sync /usr/bin/githolesync
 
+# Put this .githole directory in the .gitignore so it doesn't get added
+echo ".githole" >> ../.gitignore
+
