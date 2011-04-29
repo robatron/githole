@@ -34,23 +34,28 @@ The master repository is just a bare Git repository. Find computer with a persis
 
 ### Clients
 
-Githole clients are just a clone of the master githole repository with a few helper scripts. Clone your master githole repository, create a .githole folder within it, clone these githole scripts into it, and run the deploy script:
+Githole clients are just a clone of the master githole repository with a few helper scripts. 
 
-    git clone ssh://yourusername@server.address/path/to/githole.git # See git help clone for valid Git URLs
-    cd githole
+#### Install notify-send
+
+notify-send is a utility that allows githole to communicate with your desktop environment's notification system to tell you about githole synchronization status. If you're on Ubuntu, you should be able to install it with the following:
+
+    sudo apt-get install libnotify-bin
+
+#### Clone your master githole repository
+
+    git clone ssh://yourusername@server.address/path/to/yourgithole.git # See git help clone for valid Git URLs
+
+#### Make a .githole folder inside your githole    
+
+    cd yourgithole
     mkdir .githole
+
+#### Fetch the githole scripts into your .githole directory
+
+    cd .githole
     git clone https://github.com/robatron/githole.git
+
+#### Run the deploy script
+
     ./deploy
-
-## Requirements
-
-Githole depends on the following:
-
-* Git >= 1.7.4
-* notify-send >= 0.2.2
-
-If you're on Ubuntu, you should be able to install both with:
-
-    sudo aptitude install git libnotify-bin
-
-Feel free to contact me with any questions!
