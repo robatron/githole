@@ -59,3 +59,9 @@ notify-send is a utility that allows githole to communicate with your desktop en
 #### Run the deploy script
 
     ./deploy
+
+## Usage
+
+Once deployed, your githole client should auto-sync every hour via cron. You can also force a sync cycle with:
+
+    githolesync
