@@ -22,11 +22,11 @@ I wrote this to be a rough, bare-bones alternative to [Dropbox](http://www.dropb
 
 ## Setup
 
-Githole requires the setup of two components: The server and one or more clients.
+Githole requires the setup of two components: The master repository and one or more clients.
 
-### Server
+### Master repository
 
-The server is simply a bare Git repository. Find computer with a persistant Internet connection and sufficient space for your githole, and initialize a new bare repo:
+The master repository is just a bare Git repository. Find computer with a persistant Internet connection and sufficient space for your githole, and initialize a new bare repo:
 
     mkdir githole.git
     cd githole.git
@@ -34,9 +34,9 @@ The server is simply a bare Git repository. Find computer with a persistant Inte
 
 ### Clients
 
-Clients are just a clone of the server githole repo with a few helper scripts. Clone your server githole repository, create a .githole folder within it, clone these githole scripts into it, and run the deploy script:
+Githole clients are just a clone of the master githole repository with a few helper scripts. Clone your master githole repository, create a .githole folder within it, clone these githole scripts into it, and run the deploy script:
 
-    git clone ssh://server.address/path/to/githole.git
+    git clone ssh://yourusername@server.address/path/to/githole.git # See git help clone for valid Git URLs
     cd githole
     mkdir .githole
     git clone https://github.com/robatron/githole.git
@@ -53,4 +53,4 @@ If you're on Ubuntu, you should be able to install both with:
 
     sudo aptitude install git libnotify-bin
 
-Feel free to contact me with any questions.
+Feel free to contact me with any questions!
