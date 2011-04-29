@@ -50,8 +50,8 @@ Githole clients are just a clone of the master githole repository with a few hel
 
 1. Make a .githole folder inside your githole:
 
-``cd yourgithole``
-``mkdir .githole``
+        cd yourgithole
+        mkdir .githole
 
 1. Fetch the githole scripts into your .githole directory:
 
