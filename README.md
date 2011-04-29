@@ -10,14 +10,14 @@ The idea is you have one master githole repository on a server, and many client 
 
 Here are some reasons why you should (and shouldn't) use githole over Dropbox:
 
-#### Advantages
+**Advantages:**
 
  * It's light-weight (it only uses Git and cron)
  * It's fairly simple to set up
  * You control the master githole repository, so it can be as large and secure as you want
  * The githole folder is a pure Git repo, so you can use your favorite Git utilities to view and manipulate it
 
-#### Disadvantages
+**Disadvantages:**
 
  * Githole has no pretty web-interface
  * Githole has no built-in file-sharing system
@@ -26,41 +26,41 @@ Here are some reasons why you should (and shouldn't) use githole over Dropbox:
 
 ## Setup
 
-Githole requires the setup of two components: The master repository and one or more clients.
+Githole requires the setup of two components: The master githole repository and one or more githole clients.
 
-### Master repository
+### Master githole repository
 
-The master repository is just a bare Git repository. Find computer with a persistant Internet connection and sufficient space for your githole, and initialize a new bare repo:
+The master repository is just a bare Git repository. Find server with a persistant Internet connection and sufficient space for your githole, and initialize a new bare repo:
 
     mkdir githole.git
     cd githole.git
     git init --bare
 
-### Clients
+### Client githole repositories
 
 Githole clients are just a clone of the master githole repository with a few helper scripts. 
 
-#### Install notify-send
+1. Install notify-send
 
 notify-send is a utility that allows githole to communicate with your desktop environment's notification system to tell you about githole synchronization status. If you're on Ubuntu, you should be able to install it with the following:
 
     sudo apt-get install libnotify-bin
 
-#### Clone your master githole repository
+1. Clone your master githole repository
 
     git clone ssh://yourusername@server.address/path/to/yourgithole.git # See git help clone for valid Git URLs
 
-#### Make a .githole folder inside your githole    
+1. Make a .githole folder inside your githole    
 
     cd yourgithole
     mkdir .githole
 
-#### Fetch the githole scripts into your .githole directory
+1. Fetch the githole scripts into your .githole directory
 
     cd .githole
     git clone https://github.com/robatron/githole.git
 
-#### Run the deploy script
+1. Run the deploy script
 
     ./deploy
 
