@@ -1,14 +1,39 @@
 #! /bin/bash
 
-# Pull changes from repo, add new local files, commit any changes, and push
+# Synchronize the specified githole repo at the specified interval
+#
+# Usage:
+#     sync <path to githole repository> <interval (in seconds) between syncs>
+# 
+# Example:
+#     sync ~/mygithole 300  # Sync "mygithole" every 5 minutes
 
-notify-send "githole" "Syncing $(pwd)...\nRepo size: $(du -hs | cut -f 1)"
-echo "Pulling changes..."
-git pull
-echo "Adding any new files..."
-git add *
-echo "Committing any changes..."
-git commit -am "Cha-cha-changes!"
-echo "Pushing changes..."
-git push origin master
+# Collect command line args
+REPO=$1
+INTERVAL=$2
 
+function main {
+    # "Main" function. Runs after script is fully loaded.
+    echo "---------"
+    echo " githole "
+    echo "---------"
+    echo "Press Ctrl+c to exit."
+    while [ true ]
+    do
+        echo -n "Synchronizing githole repo $REPO..."
+        echo "Hello!"
+        echo "Done! Waiting $INTERVAL seconds..."
+        sleep $INTERVAL
+    done
+}
+
+function sync {
+    # Synchronize the specified githole repository
+    cd $REPO
+    git pull
+    git add *
+    git commit -am "Cha-cha-changes!"
+    git push origin master
+}
+
+main
