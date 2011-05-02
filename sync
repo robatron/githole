@@ -21,7 +21,7 @@ function main {
     while [ true ]
     do
         echo -n "Synchronizing githole repo $REPO..."
-        echo "Hello!"
+        sync
         echo "Done! Waiting $INTERVAL seconds..."
         sleep $INTERVAL
     done
@@ -30,7 +30,7 @@ function main {
 function sync {
     # Synchronize the specified githole repository
     cd $REPO
-    git pull
+    git pull origin master
     git add *
     git commit -am "Cha-cha-changes!"
     git push origin master
