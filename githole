@@ -3,10 +3,10 @@
 # Synchronize the specified githole repo at the specified interval
 #
 # Usage:
-#     sync <path to githole repository> <interval (in seconds) between syncs>
+#     githole <path to githole repository> <interval (seconds) between syncs>
 # 
 # Example:
-#     sync ~/mygithole 300  # Sync "mygithole" every 5 minutes
+#     githole ~/mygithole 300  # Sync "mygithole" every 5 minutes
 
 # Collect command line args
 REPO=$1
