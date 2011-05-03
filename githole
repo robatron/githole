@@ -32,6 +32,7 @@ function sync {
     cd $REPO
     git pull origin master
     git add *
+    git add */.*    # Add all hidden files
     git commit -am "Cha-cha-changes!"
     git push origin master
 }
